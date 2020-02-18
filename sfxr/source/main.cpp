@@ -1323,21 +1323,21 @@ void ddkInit()
 
 	ddkSetMode(640,480, 32, 60, DDK_WINDOW, "sfxr"); // requests window size etc from ddrawkit
 
-	if (LoadTGA(font, "/usr/local/share/sfxr/images/font.tga")) {
+	if (LoadTGA(font, "/snap/sfxr/current/images/font.tga")) {
         	/* Try again in cwd */
 		if (LoadTGA(font, "images/font.tga")) {
 			fprintf(stderr,
-				"Error could not open /usr/local/share/sfxr/images/font.tga"
+				"Error could not open /snap/sfxr/current/images/font.tga"
 				" nor images/font.tga\n");
 			exit(1);
 		}
 	}
 
-	if (LoadTGA(ld48, "/usr/local/share/sfxr/images/ld48.tga")) {
+	if (LoadTGA(ld48, "/snap/sfxr/current/images/ld48.tga")) {
         	/* Try again in cwd */
 		if (LoadTGA(ld48, "images/ld48.tga")) {
 			fprintf(stderr,
-				"Error could not open /usr/local/share/sfxr/images/ld48.tga"
+				"Error could not open /snap/sfxr/current/images/ld48.tga"
 				" nor images/ld48.tga\n");
 			exit(1);
 		}
